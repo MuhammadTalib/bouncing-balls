@@ -27,7 +27,6 @@ class Car{
 		ctx.closePath()
 	}
 	render(){
-		
 		ctx.beginPath()
 		ctx.drawImage(this.img,this.x,this.y,this.width,this.height)
 		ctx.closePath()
@@ -39,19 +38,14 @@ class Car{
 }
 
 Car.prototype.advancePosition = function(){
-	//console.log("x",this.x)
+
 	if(this.x_dif<0)this.x_dif=-9; else this.x_dif=9
 	if(this.y_dif<0)this.y_dif=-4; else this.y_dif=4	
 	
 	if(this.x+this.width>=cvs.width){
-		
-		var n=Math.floor((Math.random()*10))
-		
-	
-		this.x_dif = -1*n
+		this.x_dif = -9
 	}
 	if(this.y+this.height>=cvs.height){
-		
 		this.y_dif = -4
 	}
 	if(this.x<=0){

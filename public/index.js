@@ -8,8 +8,8 @@ function init(){
 	ctx=cvs.getContext("2d")
 	
 	cultus	= new Car(20,10,20,20,"pingpong1.jpg")
-	Mehran	= new Car(400,400,20,20,"car2.jpg")
-	Corolla	= new Car(500,0,20,20,"car3.jpg")
+	// Mehran	= new Car(400,400,20,20,"car2.jpg")
+	// Corolla	= new Car(500,0,20,20,"car3.jpg")
 
 	requestAnimationFrame(gameLoop)
 }
@@ -20,11 +20,11 @@ function gameLoop() {
 	cultus.render()
 	cultus.update()
 
-	Mehran.render()
-	Mehran.update()
+	// Mehran.render()
+	// Mehran.update()
 	
-	Corolla.render()
-	Corolla.update()
+	// Corolla.render()
+	//Corolla.update()
 	
 	requestAnimationFrame(gameLoop)
 
